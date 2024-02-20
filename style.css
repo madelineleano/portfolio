@@ -32,6 +32,10 @@ a{
   color: inherit;
   text-align: center;
   padding: 0.5em 0.5em 0.5em 0.5em;
-
-
+}
+:root{
+  accent-color:var(oklch(65% 50% 0));
+}
+:hover{
+  border-bottom: var(oklch(65% 50% 0));
 }
