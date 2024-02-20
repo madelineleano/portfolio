@@ -40,3 +40,20 @@ a{
 :hover{
   border-bottom: var(oklch(65% 50% 0));
 }
+
+input{font: inherit;}
+textarea{font:inherit;}
+button{font:inherit;}
+
+form{
+  display:block;
+  width:100%;
+  box-sizing: border-box;
+
+}
+label{
+  display: block;
+  margin-block: 50px 50px;
+  width:100%;
+  box-sizing: border-box;
+}
