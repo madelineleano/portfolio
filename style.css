@@ -11,6 +11,13 @@ body {
     padding-bottom: 50px;
   }
 
+  :root{
+    --accent-color: oklch(65% 50% 0);
+  }
+  :hover{
+    --border-bottom: oklch(65% 50% 0);
+  }
+
 html{
   accent-color: var(--accent-color);
   border-bottom: var(--border-bottom);
@@ -37,12 +44,6 @@ a{
   color: inherit;
   text-align: center;
   padding: 0.5em 0.5em 0.5em 0.5em;
-}
-:root{
-  --accent-color: oklch(65% 50% 0);
-}
-:hover{
-  --border-bottom: oklch(65% 50% 0);
 }
 
 input{font: inherit;}
