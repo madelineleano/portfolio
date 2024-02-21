@@ -11,6 +11,10 @@ body {
     padding-bottom: 50px;
   }
 
+html{
+  accent-color: var(--accent-color);
+  border-bottom: var(--border-bottom);
+}
 nav{
   display: flex;
   margin-bottom: 15px;
@@ -35,10 +39,10 @@ a{
   padding: 0.5em 0.5em 0.5em 0.5em;
 }
 :root{
-  accent-color:var(oklch(65% 50% 0));
+  --accent-color: oklch(65% 50% 0);
 }
 :hover{
-  border-bottom: var(oklch(65% 50% 0));
+  --border-bottom: oklch(65% 50% 0);
 }
 
 input{font: inherit;}
@@ -60,6 +64,7 @@ grid-column: 1/-1;
 .projects{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 15px;
 }
 
 article{
@@ -70,9 +75,13 @@ h2{
   margin: 0;
 }
 
-h1 h2 h3 h4 h5 h6 {
+h1{
+  font-size: large;
+}
+
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
-  text-wrap: balance;
+  text-wrap: balance; 
 }
 
 .resume {
