@@ -21,6 +21,7 @@ body {
 html{
   accent-color: var(--accent-color);
   border-bottom: var(--border-bottom);
+  color-scheme: light dark;
 }
 nav{
   display: flex;
@@ -49,6 +50,7 @@ a{
 input{font: inherit;}
 textarea{font:inherit;}
 button{font:inherit;}
+select{font: inherit;}
 
 form{
   display:grid;
@@ -89,4 +91,11 @@ h1, h2, h3, h4, h5, h6 {
   display: grid;
   grid-template-columns: subgrid;
   grid-column: 1/-1;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
 }
